@@ -1,10 +1,44 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Alura Typer</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alura Typer</title>
+        <link rel="stylesheet" href="/home/luciana/Documentos/GitHub/Alura_jQuery/public/css/libs/materialize.min.css">
+    </head>
 <body>
-    <!-- Seja bem vindo ao curso de jQuery :) -->
+    <div class="container">
+            <h1 class="center">Alura Typer</h1>
+            <p class="frase center">Esta frase tem cinco belas palavras</p>
+        
+        <ul class="informacoes center">
+
+            <li>
+                <i class="small material-icons">description</i>
+                <span id="tamanho-frase">5</span> palavras
+            </li>
+            <!-- CONCEITO DE SPAN ???-->
+            <li>
+                <i class="small material-icons">query_builder</i>
+                <span id="tempo-digitacao">5</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+        <!-- linhas e colunas em textarea vai dar o limite de caracteres da digitação
+        ou serve apenas de parâmetro para a largura e altura do campo?? -->
+        <button id="botao-reiniciar">Reiniciar jogo</button>
+        
+        <ul class="center">
+            <li><span id="contador-caracteres">0</span> caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+    </div>
 </body>
+   
+        
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    </body>
 </html>
