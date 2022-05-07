@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="pt-br">
+
     <head>
         <meta charset="UTF-8">
         <title>Alura Typer</title>
@@ -9,10 +10,11 @@
         <link rel="stylesheet" href="/home/luciana/Documentos/GitHub/Alura_jQuery/public/css/estilos.css"
 
     </head>
+
 <body>
     <div class="container">
             <h1 class="center">Alura Typer</h1>
-            <p class="frase center">Esta frase tem cinco belas palavras</p>
+            <p class="frase center">Esta frase tem oito belas e grandiosas palavras</p>
         
         <ul class="informacoes center">
 
@@ -30,13 +32,42 @@
         <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
         <!-- linhas e colunas em textarea vai dar o limite de caracteres da digitação
         ou serve apenas de parâmetro para a largura e altura do campo?? -->
-        <button id="botao-reiniciar">Reiniciar jogo</button>
         
+        <div class="botoes">
+            <a class="btn-floating btn-large waves-effect waves-light red" id="botao-reiniciar">
+                <i class="material-icons">restore</i>
+            </a>
+        </div>
+
         <ul class="center">
             <li><span id="contador-caracteres">0</span> caracteres</li>
             <li><span id="contador-palavras">0</span> palavras</li>
         </ul>
-    </div>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>            
+            <table class="centered bordered"> <!--Centralida o conteúdo da coluna e delimita as linhas-->
+                <thead> <!--Lembrar que "thead" é o topo da tabela!-->
+                    <tr>
+                        <td>Nome</td>
+                        <td>Nº de palavras</td>
+                        <td>Remover</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usuário Padrão</td>
+                        <td>999</td>
+                        <td>
+                            <a href="#" class="botao-remover">
+                                <i class="small material-icons">delete</i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    
 </body>
    
         
